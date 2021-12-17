@@ -15,6 +15,7 @@
   max-height: 756px;
   /* выше установили ограничения для секции */
   display: flex;
+  overflow: hidden;
   align-items: center;
   position: relative;
   background-color: #f2f2f2;
@@ -136,10 +137,7 @@ font-weight: bold;
 }
 
 .digits {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 100px 0;
+  margin: 100px auto;
 }
 
 .section-title:first-of-type {
@@ -148,7 +146,7 @@ font-weight: bold;
 
 .section-title {
   width: 60%;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   /*Высота строки 1.15, шрифта 60px, начертание шрифта полужирное*/
   line-height: 1.15;
@@ -156,9 +154,16 @@ font-weight: bold;
   font-weight: bold;
 }
 
+.section-title_theme_dark {
+  border: 1px solid red;
+  color: white;
+  /*Высота строки 1.15, размер шрифта 60px, начертание шрифта
+полужирное*/
+}
+
 .section-subtitle {
   width: 60%;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   /*Высота строки 34px, шрифта 24px, начертание шрифта нормальное*/
   line-height: 34px;
@@ -166,11 +171,23 @@ font-weight: bold;
   font-weight: normal;
 }
 
+.section-subtitle_theme_dark {
+  border: 1px solid red;
+  color: white;
+  /*Высота строки 34px, размер шрифта 24px, начертание шрифта
+нормальное*/
+}
+
 .table {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
+  margin: 0 auto;
+}
+
+.table_theme_dark {
+  border: 1px solid red;
 }
 
 .table__cell {
@@ -182,8 +199,9 @@ font-weight: bold;
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
+  /*margin-right: 0; так было по дефолту*/
   margin-top: 80px;
+  border: 1px solid red;
 }
 
 .table__heading {
@@ -194,6 +212,13 @@ font-weight: bold;
   margin: 0;
   padding: 0;
 }
+
+.table__heading_theme_dark {
+  border: 1px solid red;
+  /*Высота строки 1.15, размер шрифта 24px, начертание шрифта
+полужирное*/
+}
+
 .table__text {
   /*Высота строки 1.2, размер шрифта 18px, начертание шрифта нормальное*/
   line-height: 1.2;
@@ -201,6 +226,12 @@ font-weight: bold;
   font-weight: normal;
   margin: 20px 0 0;
   padding: 0;
+}
+
+.table__text_theme_dark {
+  border: 1px solid red;
+  /*Высота строки 1.2, размер шрифта 18px, начертание шрифта
+нормальное*/
 }
 
 /*img ширина на высоту 867x637px*/
@@ -252,6 +283,22 @@ font-weight: bold;
 
 
 .kaufman {
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+  padding: 90px 0;
+  background-color: #1f1f1f;
+
+}
+
+.kaufman__triangle {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
 }
 
 .footer {
