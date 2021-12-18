@@ -86,10 +86,6 @@
   height: 35px;
 }
 
-.content {
-
-}
-
 .description {
   padding-top: 100px;
   display: flex;
@@ -109,8 +105,6 @@
   width: 175px;
   margin: 0;
   padding: 0;
-  /*Высота строки 1.2, размер шрифта 18px, начертание шрифта
-нормальное*/
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -125,8 +119,6 @@
 .two-columns__paragraph {
   margin: 30px 0 0;
   padding: 0;
-  /*Высота строки 34px, размер шрифта 24px, начертание шрифта
-нормальное*/
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -137,24 +129,17 @@
 }
 
 .two-columns__span-accent {
-  /*Высота строки 34px, размер шрифта 24px, начертание шрифта
-полужирное (все, кроме полужирности, наследуется от ".two-columns__paragraph")*/
 font-weight: bold;
 }
 
 .digits {
-  margin: 100px auto;
-}
-
-.section-title:first-of-type {
-  margin-bottom: 20px;
+  padding: 100px 0;
 }
 
 .section-title {
   width: 60%;
   margin: 0 auto;
   text-align: center;
-  /*Высота строки 1.15, шрифта 60px, начертание шрифта полужирное*/
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -162,15 +147,12 @@ font-weight: bold;
 
 .section-title_theme_dark {
   color: white;
-  /*Высота строки 1.15, размер шрифта 60px, начертание шрифта
-полужирное*/
 }
 
 .section-subtitle {
   width: 60%;
-  margin: 0 auto;
+  margin: 20px auto 0;
   text-align: center;
-  /*Высота строки 34px, шрифта 24px, начертание шрифта нормальное*/
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -178,8 +160,6 @@ font-weight: bold;
 
 .section-subtitle_theme_dark {
   color: white;
-  /*Высота строки 34px, размер шрифта 24px, начертание шрифта
-нормальное*/
 }
 
 .table {
@@ -188,9 +168,6 @@ font-weight: bold;
   justify-content: space-between;
   width: 1100px;
   margin: 0 auto;
-}
-
-.table_theme_dark {
 }
 
 .table__cell {
@@ -202,12 +179,10 @@ font-weight: bold;
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  /*margin-right: 0; так было по дефолту*/
   margin-top: 80px;
 }
 
 .table__heading {
-  /*Высота строки 1.15, шрифта 24px, начертание шрифта полужирное*/
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -215,13 +190,7 @@ font-weight: bold;
   padding: 0;
 }
 
-.table__heading_theme_dark {
-  /*Высота строки 1.15, размер шрифта 24px, начертание шрифта
-полужирное*/
-}
-
 .table__text {
-  /*Высота строки 1.2, размер шрифта 18px, начертание шрифта нормальное*/
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -229,12 +198,6 @@ font-weight: bold;
   padding: 0;
 }
 
-.table__text_theme_dark {
-  /*Высота строки 1.2, размер шрифта 18px, начертание шрифта
-нормальное*/
-}
-
-/*img ширина на высоту 867x637px*/
 .feynman {
   position: relative;
   background-color: #f2f2f2;
@@ -242,7 +205,8 @@ font-weight: bold;
   background-repeat: no-repeat;
   background-size: 867px 637px;
   background-position: bottom left;
-  height: 890px;
+  box-sizing: border-box;
+  min-height: 890px;
   padding-top: 100px;
 }
 
@@ -251,8 +215,6 @@ font-weight: bold;
   text-align: center;
   margin: 0 auto;
   padding: 0;
-  /*Высота строки 1.15, размер шрифта 120px, начертание шрифта
-полужирное*/
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -262,25 +224,21 @@ font-weight: bold;
   text-align: center;
   margin: 70px auto 0;
   padding: 0;
-  /*Высота строки 51px, размер шрифта 36px, начертание шрифта
-нормальное*/
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
 }
+
 .feynman__link {
   position: absolute;
   right: 48px;
   top: 50%;
   color: #2f80ed;
   text-decoration: none;
-  /*Высота строки 51px, размер шрифта 36px, начертание шрифта
-нормальное*/
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
 }
-
 
 .kaufman {
   position: relative;
@@ -288,7 +246,6 @@ font-weight: bold;
   overflow: hidden;
   padding: 90px 0;
   background-color: #1f1f1f;
-
 }
 
 .kaufman__triangle {
@@ -304,6 +261,7 @@ font-weight: bold;
 .footer {
   display: flex;
   min-height: 350px;
+  box-sizing: border-box;
   padding: 60px 0 40px;
   background-color: #1f1f1f;
   color: white;
@@ -326,20 +284,13 @@ font-weight: bold;
 
 .footer__author {
   margin: 18px 0;
-  /*Высота строки 25px, размер шрифта 18px, начертание шрифта
-нормальное*/
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
 
-.footer__column_content_info {
-}
-
 .footer__column-heading {
   margin: 0 0 20px;
-  /*Высота строки 30px, размер шрифта 18px, начертание шрифта
-полужирное*/
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -352,17 +303,11 @@ font-weight: bold;
 }
 
 .footer__column-link {
-  /*Высота строки 30px, размер шрифта 18px, начертание шрифта
-нормальное*/
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   color: white;
   text-decoration: none;
-}
-
-
-.footer__column_content_social {
 }
 
 .footer__social-icon {
