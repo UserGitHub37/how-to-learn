@@ -66,8 +66,6 @@
 }
 
 .logo {
-  width: 183px;
-  height: 32px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,13 +73,21 @@
 
 .logo_place_header {
   background-image: url(../images/logo_place_header.svg);
+  width: 183px;
+  height: 32px;
   position: absolute;
   top: 30px;
   left: 64px;
 }
 
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  width: 183px;
+  height: 35px;
+}
 
 .content {
+
 }
 
 .description {
@@ -302,4 +308,55 @@ font-weight: bold;
 }
 
 .footer {
+  display: flex;
+
+  min-height: 350px;
+  border: 1px solid red;
+  padding: 60px 0 40px;
+}
+.footer__columns {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  border: 1px solid red;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__author {
+  margin: 18px 0;
+  border: 1px solid red;
+}
+
+.footer__column_content_info {
+  border: 1px solid red;
+}
+
+.footer__column-heading {
+  margin: 0 0 20px;
+  border: 1px solid red;
+}
+
+.footer__column-links {
+  list-style-type: none;
+  margin: 0 0 16px;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.footer__column_content_social {
+  border: 1px solid red;
+}
+
+.footer__social-icon {
+  margin: 0 10px 0 0;
+  width: 16px;
+  height: 16px;
 }
