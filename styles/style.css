@@ -161,7 +161,6 @@ font-weight: bold;
 }
 
 .section-title_theme_dark {
-  border: 1px solid red;
   color: white;
   /*Высота строки 1.15, размер шрифта 60px, начертание шрифта
 полужирное*/
@@ -178,7 +177,6 @@ font-weight: bold;
 }
 
 .section-subtitle_theme_dark {
-  border: 1px solid red;
   color: white;
   /*Высота строки 34px, размер шрифта 24px, начертание шрифта
 нормальное*/
@@ -193,7 +191,6 @@ font-weight: bold;
 }
 
 .table_theme_dark {
-  border: 1px solid red;
 }
 
 .table__cell {
@@ -207,7 +204,6 @@ font-weight: bold;
   color: white;
   /*margin-right: 0; так было по дефолту*/
   margin-top: 80px;
-  border: 1px solid red;
 }
 
 .table__heading {
@@ -220,7 +216,6 @@ font-weight: bold;
 }
 
 .table__heading_theme_dark {
-  border: 1px solid red;
   /*Высота строки 1.15, размер шрифта 24px, начертание шрифта
 полужирное*/
 }
@@ -235,7 +230,6 @@ font-weight: bold;
 }
 
 .table__text_theme_dark {
-  border: 1px solid red;
   /*Высота строки 1.2, размер шрифта 18px, начертание шрифта
 нормальное*/
 }
@@ -309,17 +303,17 @@ font-weight: bold;
 
 .footer {
   display: flex;
-
   min-height: 350px;
-  border: 1px solid red;
   padding: 60px 0 40px;
+  background-color: #1f1f1f;
+  color: white;
 }
+
 .footer__columns {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 90%;
-  border: 1px solid red;
 }
 
 .footer__column_content_copyright {
@@ -332,27 +326,43 @@ font-weight: bold;
 
 .footer__author {
   margin: 18px 0;
-  border: 1px solid red;
+  /*Высота строки 25px, размер шрифта 18px, начертание шрифта
+нормальное*/
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .footer__column_content_info {
-  border: 1px solid red;
 }
 
 .footer__column-heading {
   margin: 0 0 20px;
-  border: 1px solid red;
+  /*Высота строки 30px, размер шрифта 18px, начертание шрифта
+полужирное*/
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .footer__column-links {
   list-style-type: none;
   margin: 0 0 16px;
   padding: 0;
-  border: 1px solid red;
 }
 
+.footer__column-link {
+  /*Высота строки 30px, размер шрифта 18px, начертание шрифта
+нормальное*/
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+}
+
+
 .footer__column_content_social {
-  border: 1px solid red;
 }
 
 .footer__social-icon {
